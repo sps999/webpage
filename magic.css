@@ -1,0 +1,66 @@
+
+body{
+   background-color: white;
+}
+   
+h1{
+   color: #C70039;
+}
+   
+h2{
+   color: steelblue;
+}
+
+h3{
+   color: steelblue;
+}
+   
+p {
+   font-size: 1.2em;
+   color: honeydew;
+}
+
+li {
+   color: black;
+}
+
+img {
+   margin: 4px;
+}
+   
+.blurred{
+   text-align: center;
+   display: block;
+   margin: auto;
+}
+
+.list{
+   background-color:rgba(0, 0, 100, 0.4);
+   border: 4px solid rgba(0, 0, 100, 0.4);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 15px;
+}
+
+.list_item{
+   background-color:rgba(0, 0, 0, 0.4);
+   border: 4px solid black;
+   padding: 5px;
+   width: 330px;
+   margin: 15px;
+}
+
+.filtercolor{
+   cursor: pointer;
+}
+
+.filtertype{
+   color: #D11414;
+   cursor: pointer;
+}
+
+#glasses{
+   border: 4px ridge gray;
+   float: top;
+}

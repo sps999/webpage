@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Magic the Gathering</title>
+  <meta name="description" content="Search for Magic the Gathering cards by color and creature type">
+  <meta name="author" content="sps999">
+  
+  <meta name="viewport" content="width-device-width" initial-scale="1">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+  <!-- MTG Database -->
+  <script src="scripts/magic.js"></script>
+  
+  <link rel="stylesheet" href="magic.css">
+</head>
+
+<body>
+   
+   <div class="container-fluid">
+   
+      <h1>Magic Cards Search</h1>
+      <div class="col-sm-6">
+      <h3>Color</h3>
+      <img class="filtercolor" id="white" src="images/mana-white.png">
+      <img class="filtercolor" id="blue" src="images/mana-blue.png">
+      <img class="filtercolor" id="black" src="images/mana-black.png">
+      <img class="filtercolor" id="red" src="images/mana-red.png">
+      <img class="filtercolor" id="green" src="images/mana-green.png">
+      </div>
+      <div class="col-sm-6">
+      <h3>Type</h3>
+      <ul>
+         <li class="filtertype" id="pirate">Pirate</li>
+         <li class="filtertype" id="dinosaur">Dinosaur</li>
+         <li class="filtertype" id="vampire">Vampire</li>
+         <li class="filtertype" id="merfolk">Merfolk</li>
+         <li><input  id="customtype" type="text" value="Human"></li>
+      </ul>
+      </div>
+      <h4 class = "col-sm-12"><hr/>Cards</h4>
+      <div id="summary" class="lead"></div>
+      <hr/>
+      
+   </div>
+</body>
+</html>
